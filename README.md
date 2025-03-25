@@ -1,63 +1,61 @@
-# AutoQA – Web Automation Testing Framework
+# SauceDemoQA
 
-**AutoQA** is a modular test automation framework built using **Python**, **Selenium WebDriver**, and **PyTest**.  
-It automates key Quality Assurance (QA) tasks such as login validation, UI navigation, and product visibility testing using the [saucedemo.com](https://www.saucedemo.com) demo site.
+**SauceDemoQA** is a robust, modular, and scalable test automation framework for browser-based UI testing.  
+It uses **Python**, **Selenium WebDriver**, and **PyTest**, and is built around the **Page Object Model** for clean test logic separation.
 
----
-
-## Features
-
-- Automated login flow testing
-- UI navigation and logout checks
-- Product view interaction
-- Clear and modular test structure
-- Easy to extend and maintain
+This project runs automated tests against the demo e-commerce site:  
+[https://www.saucedemo.com](https://www.saucedemo.com)
 
 ---
 
-## Technologies Used
+## 🚀 Features
 
-- Python 3.12
-- Selenium WebDriver
-- PyTest
+- Page Object Model (POM) for clean, reusable page interactions
+- Parametrized login tests with valid and invalid credentials
+- Negative test handling (empty form, locked user, wrong password)
+- HTML report generation using `pytest-html`
+- Automatic screenshot capture on test failures
+
 
 ---
 
+## Setup & Installation
 
-## Installation
-
-1. Clone this repository or download the ZIP:
-
-
-2. Install dependencies :
-
+1. Clone the repo or unzip the project:
 ```bash
+cd autoqa-advanced
 pip install -r requirements.txt
 ```
 
-3. Ensure ChromeDriver is installed and added to your system PATH.
+2. Ensure ChromeDriver is installed.
 
 ---
 
-## Running Tests
+## Running the Tests
 
 ```bash
-pytest
+pytest --html=report.html
 ```
 
-All tests will open Chrome, execute actions, and close the browser automatically.
+- Test output will appear in the terminal
+- HTML report will be generated as `report.html`
+- Screenshots (on failures) go into `/screenshots/`
 
 ---
 
-## Test Target
+## Credentials for Testing
 
-All tests interact with the demo website:  
-[https://www.saucedemo.com](https://www.saucedemo.com)
+Use SauceDemo-provided test users:
+```
+Username: standard_user
+Password: secret_sauce
+```
 
-Use test credentials like:
+---
 
-- Username: `standard_user`
-- Password: `secret_sauce`
+## Example Screenshot on Failure
+
+On any test failure, a full-page screenshot is saved automatically to help you debug.
 
 ---
 
