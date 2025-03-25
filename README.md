@@ -1,6 +1,6 @@
 # AutoQA – Web Automation Testing Framework
 
-**AutoQA** is a lightweight and modular test automation framework built using **Python**, **Selenium WebDriver**, and **PyTest**.  
+**AutoQA** is a modular test automation framework built using **Python**, **Selenium WebDriver**, and **PyTest**.  
 It automates key Quality Assurance (QA) tasks such as login validation, UI navigation, and product visibility testing using the [saucedemo.com](https://www.saucedemo.com) demo site.
 
 ---
@@ -23,39 +23,19 @@ It automates key Quality Assurance (QA) tasks such as login validation, UI navig
 
 ---
 
-## Project Structure
-
-```
-testing-portfolio/
-│
-├── tests/
-│   ├── test_login.py        # Validates login functionality
-│   ├── test_navigation.py   # Checks menu and logout flow
-│   └── test_search.py       # Opens a product detail page
-│
-├── conftest.py              # Shared setup/teardown for WebDriver
-├── requirements.txt         # Project dependencies
-└── README.md
-```
-
----
 
 ## Installation
 
 1. Clone this repository or download the ZIP:
 
-```bash
-git clone https://github.com/yourusername/AutoQA.git
-cd AutoQA
-```
 
-2. Install dependencies (Python 3.12 recommended):
+2. Install dependencies :
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Ensure [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/) is installed and added to your system PATH.
+3. Ensure ChromeDriver is installed and added to your system PATH.
 
 ---
 
